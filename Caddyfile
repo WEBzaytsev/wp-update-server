@@ -1,0 +1,12 @@
+:80 {
+    root * /var/www/html
+    php_fastcgi app:9000
+    file_server
+    encode gzip
+    
+    # Защита директорий
+    @blocked {
+        path /cache/* /logs/* /packages/*
+    }
+    respond @blocked 403
+} 

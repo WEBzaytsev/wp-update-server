@@ -1,0 +1,16 @@
+.git
+.github
+.gitignore
+.gitmodules
+README.md
+docker-compose.yml
+Dockerfile
+Caddyfile
+cache/*
+logs/*
+packages/*
+!packages/.htaccess
+package-assets/banners/*
+!package-assets/banners/readme.md
+package-assets/icons/*
+!package-assets/icons/readme.md 
